@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+ 
+}
+
+h1{
+	 text-align: center;
 }
 
 .App-logo {
@@ -18,12 +22,27 @@
   font-size: large;
 }
 
+
+.columna{
+	position:relative;
+	width:14%;
+}
+
+img{
+	
+	
+}
+
 input{
   position: absolute;
   left:35%;
   width:30%;
   top:100px;
 
+}
+
+.Foto{
+	width:14%
 }
 
 @keyframes App-logo-spin {

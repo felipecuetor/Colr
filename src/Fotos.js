@@ -3,14 +3,17 @@ import React, { Component } from 'react';
 
 class Fotos extends Component {
 
-	darURL(url)
+	darURL()
 	{
-		var resp = "https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_s.jpg";
-		resp.replace("{farm-id}", url.farm);
-		resp.replace("{server-id}", url.server);
-		resp.replace("{id}", url.id);
-		resp.replace("{secret}", url.secret);
+		{
+		var resp = "https://farm";
+		resp+=this.props.farm+".staticflickr.com/";
+		resp+=this.props.server+"/";
+		resp+=this.props.id+"_";
+		resp+=this.props.secret+"_s.jpg";
+		console.log(resp);
 		return resp;
+		}
 	}
 
 

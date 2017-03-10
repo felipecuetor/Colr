@@ -4,6 +4,8 @@ Se deben ejecutar los siguientes comandos en consola en la carpeta del proyecto.
 
 npm install
 
+npm install --save react-columns
+
 npm run build
 
 node server

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import './Fotos.css';
 
 class Fotos extends Component {
-	
+
 	darURL(url)
 	{
 		var resp = "https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_s.jpg";
@@ -12,9 +12,10 @@ class Fotos extends Component {
 		resp.replace("{secret}", url.secret);
 		return resp;
 	}
-	
-	
+
+
   render() {
+		console.log("Imprimiendo imagen");
     return (
       <div className="Foto">
 		<img src={this.darURL()}/>

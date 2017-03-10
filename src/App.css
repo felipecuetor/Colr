@@ -19,9 +19,11 @@
 }
 
 input{
-  position:fixed;
-  top:2.5%;
-  left:2.5%;
+  position: absolute;
+  left:35%;
+  width:30%;
+  top:100px;
+
 }
 
 @keyframes App-logo-spin {

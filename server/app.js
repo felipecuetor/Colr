@@ -7,6 +7,9 @@ const fs = require("fs");
 
 const app = express();
 
+const cors = require('cors');
+app.use(cors({origin: '*'}));
+
 // Assumes that there are two files containing the keys
 // $PROJECT_HOME/server/api_key.txt
 // $PROJECT_HOME/server/api_secret.txt
